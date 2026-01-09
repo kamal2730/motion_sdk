@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(motion_sdk
   src/usb_serial.cpp
   src/servo.cpp
+  src/stepper.cpp
 )
 
 target_include_directories(motion_sdk PUBLIC
