@@ -9,7 +9,7 @@ Servo::Servo(USBSerial& serial, int id)
 
 bool Servo::ping() {
     std::ostringstream cmd;
-    cmd << "SET_POS " << id_;
+    cmd << "SET_POS " << id_ << " ";
     if (!serial_.writeLine(cmd.str()))
         return false;
 
